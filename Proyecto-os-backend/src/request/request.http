@@ -1,0 +1,16 @@
+POST http://localhost:8080/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre1":"Alvaro",
+    "nombre2":"",
+    "apellido1":"Merida",
+    "apellido2":"Sosa",
+    "username":"asosa",
+    "pass":"asosa",
+    "email":"asosa@prueba.com",
+    "efechac":"08/07/1998",
+    "fechamod":""
+}
+
+GET http://localhost:8080/login HTTP/1.1
