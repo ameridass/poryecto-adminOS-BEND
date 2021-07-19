@@ -4,15 +4,15 @@ const mySql = require('mysql')
 const conn = require('express-myconnection')
 const signup = require('./routes/signup')
 const login = require('./routes/login')
-const dotenv = require('dotenv')
+
 
 
 //config server
 app.set('port', process.env.PORT || 8080);
 
 //conexion a bd
-const connection = require('./database/db');
-/*const dbOptions = {
+
+const dbOptions = {
     host: "174.138.41.43",
     port: 3306,
     user: 'nodejs1',
@@ -20,16 +20,13 @@ const connection = require('./database/db');
     database: 'tn1',
     //multipleStatements:true
     insecureAuth: true
-}*/
+}
 
-
-
-dotenv.config({path:'./env/.env'})
 
 
 
 //gestion o middleware
-//app.use(conn(mySql, dbOptions, 'single'))
+app.use(conn(mySql, dbOptions, 'single'))
 app.use(express.json())
 
 
