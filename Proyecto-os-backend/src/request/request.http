@@ -3,21 +3,25 @@ POST http://localhost:8080/signup HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre1":"Alvaro",
-    "nombre2":"",
-    "apellido1":"Merida",
-    "apellido2":"Sosa",
-    "username":"asosa",
-    "pass":"asosa",
-    "email":"asosa@prueba.com",
-    "efechac":"1998-07-08",
-    "fechamod":"1998-07-08"
+    "nombre1":"Bryan",
+    "nombre2":"Neftaly",
+    "apellido1":"Sosa",
+    "apellido2":"Robles",
+    "username":"bsosa",
+    "pass":"bsosa",
+    "email":"bsosa@prueba.com",
+    "efechac":"1998-05-11",
+    "fechamod":"2021-07-19"
 }
 ###
 POST  http://localhost:8080/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "user":"asosa",
-    "pass": "asosa"
+    "user":"bsosa",
+    "pass": "bsosa"
 }
+
+###
+GET http://localhost:8080/login/consulta HTTP/1.1
+
