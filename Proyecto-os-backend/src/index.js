@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const mySql = require('mysql')
 const conn = require('express-myconnection')
-const routes = require('./routes/rutas')
+const signup = require('./routes/signup')
+const login = require('./routes/login');
 
 
 //config 
@@ -26,7 +27,8 @@ app.get('/', (req, res) => {
     res.send('Consumiendo')
 })
 
-app.use('/login', routes)
+app.use('/signup', signup)
+app.use('/login', login)
 
 
 //configuracion del server
