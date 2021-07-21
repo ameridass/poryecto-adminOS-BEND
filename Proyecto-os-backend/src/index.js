@@ -9,7 +9,7 @@ const login = require('./routes/login')
 
 
 //config server
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 40000);
 
 //conexion a bd
 
