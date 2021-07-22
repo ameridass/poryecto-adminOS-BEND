@@ -3,18 +3,18 @@ POST http://localhost:8080/signup HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre1":"Geizer",
-    "nombre2":"",
-    "apellido1":"Posadas",
-    "apellido2":"Letran",
-    "username":"gposadas",
-    "pass":"gposadas",
-    "email":"gposadas@prueba.com",
-    "efechac":"1995-01-01",
-    "fechamod":"2021-07-19"
+    "nombre1":"Erick",
+    "nombre2":"Daniel",
+    "apellido1":"Sosa",
+    "apellido2":"Lopez",
+    "username":"dsosa",
+    "pass":"dsosa",
+    "email":"dsosa@prueba.com",
+    "efechac":"1996-07-25",
+    "fechamod":"2021-07-22"
 }
 ###
-POST  http://localhost:8080/login HTTP/1.1
+POST  http://localhost:40000/login HTTP/1.1
 Content-Type: application/json
 
 {
@@ -23,4 +23,4 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/login/consulta HTTP/1.1
+GET http://localhost:40000/login/consulta HTTP/1.1

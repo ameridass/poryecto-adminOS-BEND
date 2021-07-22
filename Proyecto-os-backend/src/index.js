@@ -15,7 +15,7 @@ app.set('port', process.env.PORT || 40000);
 
 const dbOptions = {
     host: "174.138.41.43",
-    port: 3306,
+    port: 3370,
     user: 'nodejs1',
     password: '#Tn12021T',
     database: 'tn1',
