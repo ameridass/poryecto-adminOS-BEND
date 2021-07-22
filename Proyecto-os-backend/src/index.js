@@ -4,7 +4,7 @@ const mySql = require('mysql')
 const conn = require('express-myconnection')
 const signup = require('./routes/signup')
 const login = require('./routes/login')
-
+const cors = require('cors')
 
 
 
@@ -35,7 +35,7 @@ app.use(function (req, res, next){
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
     next();
 })
-    
+//app.use(cors)
 
 
 
