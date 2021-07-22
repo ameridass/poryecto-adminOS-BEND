@@ -5,7 +5,7 @@ const conn = require("mysql");
 const bcryptjs = require("bcryptjs");
 global.XMLHttpRequest = require("xhr2");
 var xhr = new XMLHttpRequest();
-var cors = require('cors');
+//var cors = require('cors');
 
 router.get("/consulta", (req, res) => {
   req.getConnection((err, conn) => {
@@ -32,12 +32,12 @@ xhr.onload = function () {
 xhr.open("GET", "https://dog.ceo/api/breeds/list/all");
 xhr.send();
 
-const corsOptions ={
+/*const corsOptions ={
   origin:"http://localhost",
   optionsSuccessStatus:200
-}
+}*/
 
-router.post("/", cors(corsOptions), async (req, res) => {
+router.post("/", async (req, res) => {
   const user = req.body.user;
   const password = req.body.pass;
   let passwordHash = await bcryptjs.hash(password, 8);
